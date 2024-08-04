@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps_style.css">
+    <title>RPS Game</title>
+</head>
+<body>
+    <div class="rps">
+        <div class="images">
+            <img id="user" src="rock.png" alt="">
+        </div>
+        <div class="images">
+            <img id="computer" src="rock.png" alt="">
+        </div>
+    </div>
+    <div class="choice">
+        <h3>User Choices are:</h3>
+        <button onclick="clicked('rock')">Rock</button>
+        <button onclick="clicked('paper')">Paper</button>
+        <button onclick="clicked('scissor')">Scissor</button>
+    </div>
+    <div class="scores">
+        <div class="your-score">
+            <h1 >your score</h1>
+            <h2 id ="your-score">0</h2>
+        </div>
+        <div class="comp-score">
+            <h1>comp score</h1>
+            <h2 id="comp-score">0</h2>
+        </div>
+    </div>
+
+    <div class="result">
+        <h2 id="res">Play!</h2>
+        <button style="padding: 10px; 
+        border-radius: 20px; 
+        background-color: black; 
+        color: white; 
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize; cursor: pointer;" 
+        
+        onclick="window.location.reload()"
+        >Play From First</button>
+    </div>
+</body>
+<script src="rps_js.js"></script>
+</html>
